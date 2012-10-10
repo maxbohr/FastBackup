@@ -1,0 +1,108 @@
+body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        background-color: #000050;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      ul.nav li.dropdown:hover ul.dropdown-menu
+      {
+	display: block;
+	}
+
+	a.menu:after, .dropdown-toggle:after 
+	{
+  		content: none;
+	}
+	.selectedPage
+	{
+		display: inline-block;
+		padding: 5px 14px;
+		background-color: 
+		#E0C5C5;
+		border: 1px solid 
+		#DDD;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+	}
+	.error-message
+	{
+		color: 
+		#B94A48;
+		background-color: 
+		#F2DEDE;
+		border-color: 
+		#EED3D7;
+	}
+	.error-message
+	{
+		color: 
+		#B94A48;
+		background-color: 
+		#F2DEDE;
+		border-color: 
+		#EED3D7;
+	}
+	.message
+	{
+		color: 
+		#468847;
+		background-color: 
+		#DFF0D8;
+		border-color: 
+		#D6E9C6;
+	}
+
+	
+@media print
+{
+  div.form-horizontal div.well { display: none;}
+}
+/** Paging **/
+.paging {
+	background:#EEE;
+	color: #ccc;
+	margin-top: 1em;
+	clear:both;
+}
+.paging .current,
+.paging .disabled,
+.paging a {
+	text-decoration: none;
+	padding: 5px 8px;
+	display: inline-block
+}
+.paging > span {
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-left: 0;
+}
+.paging > span:hover {
+	background: #efefef;
+}
+.paging .prev {
+	border-left: 1px solid #ccc;
+	-moz-border-radius: 4px 0 0 4px;
+	-webkit-border-radius: 4px 0 0 4px;
+	border-radius: 4px 0 0 4px;
+}
+.paging .next {
+	-moz-border-radius: 0 4px 4px 0;
+	-webkit-border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
+}
+.paging .disabled {
+	color: #ddd;
+}
+.paging .disabled:hover {
+	background: transparent;
+}
+.paging .current {
+	background: #efefef;
+	color: #c73e14;
+}
+th.actions{
+    width:250px;
+}

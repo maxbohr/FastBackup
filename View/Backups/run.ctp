@@ -1,6 +1,6 @@
 <div class="backups index">
 	<h2><?php echo __('Backup Results'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
+	<table class="table table-bordered">
         <? foreach ($backup_results as $backup): ?>
         <tr>
             <td><?php echo h($backup['Backup']['id']); ?>&nbsp;</td>
@@ -15,4 +15,3 @@
         <?php endforeach; ?>
 	</table>
 </div>
-<?= $this->element('actions') ?>

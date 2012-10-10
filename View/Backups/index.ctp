@@ -1,6 +1,8 @@
 <div class="backups index">
-	<h2><?php echo __('Backups'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
+    <div class="well">
+        <h2><?php echo __('Backups'); ?></h2>
+    </div>
+	<table class="table table-striped table-bordered">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
@@ -22,8 +24,8 @@
 		<td><?php echo h($backup['Backup']['backup_validity']); ?>&nbsp;</td>
 		<td><?php echo h($backup['Backup']['retention_period']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $backup['Backup']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $backup['Backup']['id']), null, __('Are you sure you want to delete # %s?', $backup['Backup']['id'])); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $backup['Backup']['id']),array('class'=>'btn btn-success')); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $backup['Backup']['id']),array('class'=>'btn btn-danger'), __('Are you sure you want to delete # %s?', $backup['Backup']['name'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -43,4 +45,3 @@
 	?>
 	</div>
 </div>
-<?= $this->element('actions') ?>
